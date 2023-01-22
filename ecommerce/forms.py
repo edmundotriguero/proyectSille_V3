@@ -75,7 +75,7 @@ class ColorForm(forms.ModelForm):
 class ProductoForm(forms.ModelForm):
     class Meta:
         model = Producto
-        fields = ['nombre','descripcion' ,'estado','flag_precio','precio','p_inicial','p_final','img','categoria','flag_subcategoria','sub_cat','flag_marca','brand','flag_color','col','flag_unidadmedida','unidad_medida']
+        fields = ['nombre','descripcion' ,'estado','flag_precio','precio','p_inicial','p_final','img','categoria','flag_subcategoria','sub_cat','flag_marca','brand','flag_color','col','flag_unidadmedida','unidad_medida','flag_galeria']
         
         widget = {'descripcion': forms.TextInput}
 
