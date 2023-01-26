@@ -6,5 +6,9 @@ cgi-bin
 public
 tmp
 .htaccess
-.git.zip
-sillerico.zip
+passenger_wsgi.py
+wsgi.py
+static/img/
+rondas/
+.well-known/
+stderr.log
