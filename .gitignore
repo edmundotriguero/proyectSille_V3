@@ -6,3 +6,5 @@ cgi-bin
 public
 tmp
 .htaccess
+.git.zip
+sillerico.zip
