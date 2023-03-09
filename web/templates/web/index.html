@@ -119,8 +119,21 @@
 
 
 
+{% for item2 in cam %}
 
-  <div class="col-md-3">
+<div class="col-md-3">
+  <div class="card bg-dark text-black" style="border: none;" data-aos="fade-up" data-aos-duration="2000">
+    <div class="card-img-overlay text-center ">
+      <h5 class="card-title  my-auto p-0 "></h5>
+      
+    </div>
+    <img src="{{item2.img }}   " class="card-img" alt="{{item2.nombre}}">
+  </div>
+</div>
+
+{% endfor %}
+  
+  <!-- <div class="col-md-3">
     <div class="card bg-dark text-black" style="border: none;" data-aos="fade-up" data-aos-duration="2000">
       <img src="{% static '/img/categorias/sport_cat.png' %}" class="card-img" alt="categoria">
       <div class="card-img-overlay text-center ">
@@ -128,34 +141,7 @@
 
       </div>
     </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card bg-dark text-black" style="border: none;" data-aos="fade-up" data-aos-duration="2000">
-      <img src="{% static '/img/categorias/sport_cat.png' %}" class="card-img" alt="categoria">
-      <div class="card-img-overlay text-center ">
-        <h5 class="card-title  my-auto ">CAMISAS</h5>
-
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card bg-dark text-black" style="border: none;" data-aos="fade-up" data-aos-duration="2000">
-      <img src="{% static '/img/categorias/sport_cat.png' %}" class="card-img" alt="categoria">
-      <div class="card-img-overlay text-center ">
-        <h5 class="card-title  my-auto ">CAMISAS</h5>
-
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3">
-    <div class="card bg-dark text-black" style="border: none;" data-aos="fade-up" data-aos-duration="2000">
-      <img src="{% static '/img/categorias/sport_cat.png' %}" class="card-img" alt="categoria">
-      <div class="card-img-overlay text-center ">
-        <h5 class="card-title  my-auto ">CAMISAS</h5>
-
-      </div>
-    </div>
-  </div>
+  </div> -->
 
 </div>
 
@@ -179,19 +165,19 @@
 
     <div class="col-md-8">
       <div class="text-center" data-aos="fade-right">
-            <img src="{% static '/img/productos/42.png' %}" class="d-block w-100" alt="..."> 
+            <img src="{{tra.img}}" class="d-block w-100" alt="..."> 
       </div>
     </div>
 
     <div class="col-md-4">
       <div class="col-md-12 text-end m-1 mb-4">
         <div class="text-center" data-aos="fade-left" >
-              <img src="{% static '/img/productos/42.png' %}" class="d-block w-100" alt="..."> 
+              <img src="{{tra.img}}" class="d-block w-100" alt="..."> 
         </div>
       </div>
       <div class="col-md-12 text-end m-1 mt-4">
         <div class="text-center" data-aos="fade-left" >
-              <img src="{% static '/img/productos/42.png' %}" class="d-block w-100" alt="..."> 
+              <img src="{{nov.img}}" class="d-block w-100" alt="..."> 
         </div>
       </div>
     </div>
